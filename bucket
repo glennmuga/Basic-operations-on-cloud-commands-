@@ -2,7 +2,7 @@ Browser: AWS
 Search s3 Bucket
 Bucket name
 ACL enable
-acknowledge checkmark
+unclick block public access > acknowledge checkmark
 create bucket
 add and upload file /folder
 Go in file 
