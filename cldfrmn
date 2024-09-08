@@ -1,6 +1,7 @@
 Create EC2 from cloud formation:
 
-1.	Create a json file on notepad with the properties as mentioned and any other properties mentioned in the question, use online json editor for identation.
+1.	Create a json file on notepad with the properties as mentioned and any other properties mentioned in the question, 
+use online json editor for identation.
 2.	AWSTemplateFormatVersion : '2010-09-09'
 Resources:
 (tab) EC2Instance:
