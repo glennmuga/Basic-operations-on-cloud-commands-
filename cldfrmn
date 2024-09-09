@@ -8,7 +8,9 @@ Resources:
  (tab) Type: AWS::EC2::Instance
  (tab)Properties:
   (tab)InstanceType: t2.micro
-  (tab)ImageId: ami-0182f373e66f89c85 # to is get this ami id go on instances , click launch instance in quick start browse for more instances 
+  (tab)ImageId: ami-0182f373e66f89c85
+  (tab)KeyName: testkey
+# to is get this ami id go on instances , click launch instance in quick start browse for more instances 
    you will get the info of the ami linux machine , ensure that it uefi preffered  
 3.	Save this file with .json extension
 4.	Search Cloud formation in search bar 
