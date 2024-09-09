@@ -9,9 +9,9 @@ Disk Partitioning: increase and decrease Volume size:
 7.	Mkfs. <tab> <tab>
 8.	Mkfs.ext4 /dev/xvdb
 9.	Mkdir /data
-10.	Mount /dev/xvdb/data
+10.	Mount /dev/xvdb /data
 11.	Blkid >copy uuid of xvdb and paste it below 
-12.	Vim /etc/fstab {uuid = …. /data /ext4 defaults 0 0)
+12.	Vim /etc/fstab {uuid = …. /data ext4 defaults 0 0)
 13.	Df -h
 14.	Cd /data
 15.	Touch glenn.txt
