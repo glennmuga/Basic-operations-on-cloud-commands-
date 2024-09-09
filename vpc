@@ -55,7 +55,7 @@ opwn terminal
 
   create nat gateway > test-ngw > public-subnet > public connectivity type > allocate ip > done 
 
-create route table > public-rt > private-subnet > edit routes > add > nat gateway > nat > save 
+create route table > create private-rt > private-subnet > edit routes > add > nat gateway > nat > save 
 
 
 create another vpc in another region wit 20.0.0.0/0
