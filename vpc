@@ -48,9 +48,8 @@ opwn terminal
     paste the content of the file , save 
 
     chmod 400 (keypairname).pem
-    session end 
-
-copy pem - ssh 
+    ll-a 
+ open dbserverec2 ssh. 
     connect ec2 
     sudo su -
 
@@ -60,3 +59,33 @@ create route table > public-rt > private-subnet > edit routes > add > nat gatewa
 
 
 create another vpc in another region wit 20.0.0.0/0
+
+
+#peering connection 
+go to peering connection >  create > old region to new region 
+my account 
+another region > choose new region to send 
+copy vpc id  of the new region > create 
+
+check peering connection in new region > sctions > accept request
+modify route tables > public rt > edit routes > add ip > peering connection > select id > create 
+
+go in the old region 
+modify route tables > public rt > edit routes > add ip > peering connection > select id > create 
+
+connect old region public instance instance in dev terminal > 
+ssh-keygen
+cd .ssh
+cat id_rsa.pub
+cat authorized_keys
+
+connect new region public instance to terminal 
+copy cat id_rsa.pub from old region and paste vim authorized keys in new region terminal 
+copy cat id_rsa.pub from new region and paste vim authorized keys in old region terminal 
+
+cat > white.txt in old region 
+scp white.txt root@ip:/
+
+cat > black.txt in new region 
+scp black.txt root@ip:/
+
