@@ -12,6 +12,7 @@ Resources:
   (tab)KeyName: testkey
 # to is get this ami id go on instances , click launch instance in quick start browse for more instances 
    you will get the info of the ami linux machine , ensure that it uefi preffered  
+#add only if required 
 InstanceSecurityGroup:
  Type: AWS::EC2::SecurityGroup
  Properties:
